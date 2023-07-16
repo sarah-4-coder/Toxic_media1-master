@@ -1,0 +1,71 @@
+.work__section{
+
+  
+  text-align: center;
+  margin-top: -2rem !important;
+  padding: 5rem 5rem 15rem;
+  background-color: #f2ff5b;
+
+  .secondary-heading {
+    color: #000;
+  }
+  .work__button {
+    width: 100%;
+    margin: 0 auto;
+    transition: all .2s;
+    .button {
+      background-color: #000;
+      color: #fff;
+      transition: all 0.4s;
+
+      &:hover {
+        color: #000;
+        outline: 1px solid #000;
+      }
+    }
+
+    .active {
+      background-color: #000;
+      color: #f2ff5b;
+    }
+  }
+
+  .work__content {
+    .container {
+      .row {
+        width: 85%;
+        margin: 0 auto;
+
+        @include respond(tab-port) {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  @include respond(tab-port) {
+    padding: 18rem 0 22rem;
+  }
+}
+.Wcontent {
+  &__detail {
+    text-align: left;
+    padding: 3rem;
+
+    .button {
+      background-color: #000;
+      color: #f2ff5b;
+      transition: all 0.4s;
+      padding: 1.5rem 3rem;
+
+      &:hover {
+        transform: scale(1.1);
+        background-image: none;
+        background-position: 0;
+      }
+    }
+  }
+  &__text {
+    color: #000;
+  }
+}

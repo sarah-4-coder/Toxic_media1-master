@@ -1,0 +1,33 @@
+
+.header {
+  font-size: 1.4rem;
+  padding: .9rem 1.5rem .9rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+
+  &__collapse {
+    margin-left: 58%;
+    display: inline-block;
+  }
+
+  &__link {
+    width: 7rem;
+    margin-right: 4rem;
+    
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-primary !important;
+      transform: scale(1.2);
+    }
+  }
+
+  &__button {
+    background-color: $color-white;
+    margin-right: 2rem;
+  }
+}

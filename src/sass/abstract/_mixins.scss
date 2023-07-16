@@ -1,0 +1,23 @@
+//1em=16px
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint==tab-port {
+    @media (max-width: 62em) {
+      @content;
+    } //992em
+  }
+
+  @if $breakpoint==big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } //1800px
+  }
+}

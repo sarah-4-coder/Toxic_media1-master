@@ -1,0 +1,145 @@
+
+.footer {
+  position: static;
+  bottom: 0;
+  left: 0;
+  
+  
+  background-color: $color-bg;
+  color: $color-white;
+  height: auto;
+  margin-top: -4rem;
+  padding: 8rem 0 3.8rem;
+
+  text-align: center;
+
+  &__upart {
+    margin: 0 auto;
+  }
+
+  &__logo-box {
+    display: inline-block;
+    @include respond(tab-port) {
+      display: block;
+      margin-bottom: 2rem;
+    }
+    .footer__img {
+      width: 6.5rem;
+      height: 5rem;
+      margin-right: 0.5rem;
+      @include respond(tab-port) {
+        width: 9rem;
+        height: 8rem;
+      }
+    }
+    .secondary-heading {
+      font-size: 2.5rem;
+      @include respond(tab-port) {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  &__line {
+    display: inline-block;
+    border-top: 1px solid $color-white;
+    width: 50%;
+    margin: 0 2rem 0.7rem;
+    @include respond(tab-port) {
+      width: 0;
+    }
+  }
+
+  &__icons {
+    display: inline-block;
+  }
+
+  &__facebook,
+  &__instagram,
+  &__lindin {
+    background-color: $color-white;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    font-size: 2rem;
+    border-radius: 20%;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      width: 5rem;
+      height: 5rem;
+      font-size: 3.5rem;
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+
+      @include respond(tab-port) {
+        margin-right: 2rem;
+      }
+    }
+
+    &:hover {
+      transform: scale(1.2);
+      background-color: $color-primary;
+      text-shadow: 0.5rem 1rem 2rem rgba(#fff, 0.2);
+    }
+  }
+
+  &__lpart {
+    padding-left: 8rem;
+  }
+
+  &__card {
+    display: flex;
+
+    justify-content: center;
+    gap: 8rem;
+    &--1,
+    &--2,
+    &--3 {
+      flex-basis: 25rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+
+    text-align: left;
+
+    .footer__item {
+      .heading-tertiary {
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $color-white-1;
+    transition: all 0.2s;
+
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+
+  &__copyright {
+    display: inline-block;
+
+    transition: all 0.2s;
+    &:hover {
+      transform: skewY(2deg) skewX(13deg) scale(1.2);
+      text-shadow: 0.5rem 1rem 2rem rgba(#fff, 0.5);
+      color: $color-primary;
+    }
+  }
+}

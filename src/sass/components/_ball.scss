@@ -1,0 +1,42 @@
+.ball {
+	display: block;
+	width: 70px;
+	height: 70px;
+	margin: 50px auto 0;
+	border-radius: 50%;
+
+    animation: spinning82341 1.5s linear infinite;
+    transition: all .2s;
+}
+
+.b1 {
+    background: radial-gradient(circle at 65% 15%, #721784 10%, #c64984 40%, #a5359b);  
+  }
+
+
+
+@keyframes spinning82341 {
+  to {
+    filter: hue-rotate(2turn);
+    
+    // transform: rotate(360deg);
+  }
+
+  0%{
+    transform: translateY(0rem);
+  }
+
+  25%{
+    transform: translateY(-2rem);
+  }
+  50%{
+    transform: translateY(0rem);
+  }
+  75%{
+    transform: translateY(2rem);
+  }
+
+  100%{
+    transform: translateY(0);
+  }
+}

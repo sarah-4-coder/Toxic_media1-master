@@ -1,0 +1,52 @@
+.contact__section {
+  background-color: $color-bg;
+
+  padding: 1rem 5rem 7rem;
+
+  color: $color-white;
+  text-align: center;
+
+  .contact {
+    @include respond(tab-port) {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  .heading-tertiary {
+    margin: 0 auto;
+    color: $color-primary;
+    width: 50%;
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+    }
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  .secondary-heading {
+    @include respond(phone) {
+      font-size: 6rem;
+    }
+  }
+
+  &__detail {
+    text-align: left;
+    display: inline-block;
+  }
+
+  &__text {
+    @include respond(phone) {
+      font-size: 3rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    height: 65vh;
+    padding: 10rem 0 0;
+  }
+}

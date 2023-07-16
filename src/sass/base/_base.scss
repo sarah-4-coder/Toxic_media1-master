@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; //here 1rem =10px ; 10px/16px=0.625
+
+  background-color: $color-bg;
+
+  @include respond(tab-port) {
+    font-size: 75%; // 1rem=8px;8/16=50%
+  }
+
+  @include respond(big-desktop) {
+    font-size: 95%; //1rem=12px ; 12/16=75%
+  }
+}
+
+body {
+  background-color: $color-bg;
+
+  font-weight: 400;
+  font-family: "Satoshi";
+  padding: 5.5rem 0 0rem;
+
+  hyphens: auto;
+
+  ::selection {
+    color: darken($color-primary, 40%);
+  }
+}
