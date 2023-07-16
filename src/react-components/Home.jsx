@@ -9,8 +9,8 @@ const Home = () => {
     <main style={{ backgroundColor: "#f2ff5b" }}>
       <section className="home">
         <div className="home__hero ">
-          <div className="hero__box u-margin-top-small">
-            <div class="row " id="main_hero">
+          
+            <div class="row " >
               <div class="col-lg-5 main-1">
                 <h1 className="heading-primary">Design.</h1>
                 <h1 className="heading-primary">Develop.</h1>
@@ -23,12 +23,12 @@ const Home = () => {
                 </p>
               </div>
 
-              <div className="col-lg-5" id="main_div">
+              <div className="col-lg-5 main-2">
                 <img id="main" src={Medusa} alt="" />
               </div>
             </div>
           </div>
-        </div>
+       
       </section>
       <section className="about__section" id="about__section">
         <div className="about">
