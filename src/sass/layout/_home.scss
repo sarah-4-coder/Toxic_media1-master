@@ -76,8 +76,11 @@
       }
 
       .button-1 {
-        width: 25%;
-        padding: 0;
+        display: block;
+        width: 20rem;
+       
+        font-size: 1.1rem;
+        
       }
     }
 
@@ -113,12 +116,14 @@
     }
 
     &-body {
+
       color: $color-primary;
       background-color: $color-bg;
       border: none !important;
+      
 
       text-align: left;
-      padding: 1rem 0;
+      padding: 1rem ;
       font-size: 1.4rem;
     }
   }
