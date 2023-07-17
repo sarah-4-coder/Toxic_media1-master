@@ -174,7 +174,7 @@ const Service = () => {
       <div className="container">
         <div className="row">
           <div className="col">
-            <div className="content__detail">
+            <div className="content__detail u-margin-bottom-med u-margin-top-small">
               <p className="content__text u-margin-bottom-small">{prop.text}</p>
               <Link to={"/contact"} target={true} className="button">
                 Work With us
