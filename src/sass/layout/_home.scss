@@ -5,13 +5,56 @@
   background-color: $color-primary;
 
   &__hero {
-    height: 75vh;
+    height: 65vh;
+    padding: 10rem 4rem 0rem;
 
-    padding: 10rem 4rem 4rem;
+    @include respond(tab-port) {
+      height: 96vh;
+      display: flex;
+      padding: 10rem 2rem 5rem;
+    }
+
+    .row {
+      display: flex;
+      margin: auto;
+    }
 
     .main-1 {
-      width: 45%;
+      width: 50%;
+      display: flex;
       margin: auto;
+      @include respond(tab-port) {
+        width: 80%;
+
+        display: flex;
+        margin-bottom: 10rem;
+        text-align: center;
+      }
+
+      .heading-primary {
+        @include respond(tab-port) {
+          font-size: 10rem;
+        }
+      }
+
+      .main__text {
+        @include respond(tab-port) {
+          font-size: 2.5rem;
+        }
+      }
+    }
+
+    .main-2 {
+      @include respond(tab-port) {
+        height: 33%;
+      }
+    }
+    #main {
+      @include respond(tab-port) {
+        display: flex;
+        margin: auto;
+        width: 90%;
+      }
     }
   }
 }
@@ -24,6 +67,11 @@
   position: relative;
   height: 24rem;
   border-radius: 3rem;
+  @include respond(tab-port) {
+    border-top-left-radius: 9rem;
+    border-top-right-radius: 9rem;
+    height: 90rem;
+  }
 
   .about {
     border-radius: 50%;
@@ -35,6 +83,35 @@
     height: 100%;
     padding: 8rem;
     width: 30%;
+
+    @include respond(tab-port) {
+      top: 55%;
+      left: 50%;
+      height: 60%;
+      width: 75%;
+    }
+  }
+
+  .about__content {
+    @include respond(tab-port) {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 80%;
+    }
+
+    .secondary-heading {
+      @include respond(tab-port) {
+        font-size: 7rem;
+        margin-bottom: 2rem;
+      }
+    }
+    .about__text {
+      @include respond(tab-port) {
+        font-size: 2.5rem;
+      }
+    }
   }
 }
 
@@ -51,6 +128,12 @@
     margin: auto;
     .secondary-heading {
       color: $color-primary;
+      @include respond(tab-port) {
+        font-size: 7rem;
+      }
+    }
+    @include respond(tab-port) {
+      width: 75%;
     }
   }
 
@@ -61,6 +144,9 @@
 
     .accordion-button {
       width: 97.6%;
+      @include respond(tab-port) {
+        width: 110%;
+      }
     }
     &-item {
       background-color: $color-bg;
@@ -78,9 +164,20 @@
       .button-1 {
         display: block;
         width: 20rem;
-       
+
         font-size: 1.1rem;
-        
+
+        @include respond(tab-port) {
+          font-size: 2.5rem;
+          width: 40rem;
+          padding: 2rem 0 0;
+        }
+      }
+
+      @include respond(tab-port) {
+        padding: 5rem;
+        border-top: 3px solid $color-white-1;
+        border-bottom: 3px solid $color-white-1;
       }
     }
 
@@ -111,25 +208,46 @@
       }
 
       &.collapsed::after {
-        background-image: url("../../imgs/icons8-plus-48.png");
+        background-image: url("../../imgs/icons8-plus-480.png");
+        @include respond(tab-port) {
+          background-image: url("../../imgs/icons8-plus-480.png");
+        }
+      }
+
+      @include respond(tab-port) {
+        font-size: 4.5rem;
+        margin-left: -3rem;
       }
     }
 
     &-body {
-
       color: $color-primary;
       background-color: $color-bg;
       border: none !important;
-      
 
       text-align: left;
-      padding: 1rem ;
+      padding: 1rem;
       font-size: 1.4rem;
+      @include respond(tab-port) {
+        font-size: 3rem;
+        padding: 2rem 0;
+      }
     }
+
+    @include respond(tab-port) {
+      border-radius: 6rem;
+      border: 3px solid $color-white-1;
+      padding: 10rem 5rem;
+    }
+  }
+
+  @include respond(tab-port) {
+    padding: 15rem 0 22rem;
   }
 }
 
 .testimonial__section {
+  margin-top: -2rem;
   background-color: $color-bg;
   text-align: center;
   padding-bottom: 5rem;
@@ -145,6 +263,10 @@
 
   .secondary-heading {
     color: $color-primary;
+    @include respond(tab-port) {
+      font-size: 7rem;
+      width: 70%;
+    }
   }
 
   .testimonial__box {
@@ -163,6 +285,7 @@
 
     .item {
       flex: 0 0 40%;
+
       border-radius: 1rem;
       background-image: linear-gradient(
         to bottom right,
@@ -174,11 +297,42 @@
 
       scroll-snap-align: start;
 
+      .heading-tertiary {
+        @include respond(tab-port) {
+          font-size: 3rem;
+        }
+      }
+      .testimonial__text-1,
+      .testimonial__text-2 {
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
+      }
+
       .button-1 {
         display: inline-block;
         text-decoration: underline;
         font-size: 1.2rem;
+        @include respond(tab-port) {
+          font-size: 2rem;
+        }
+      }
+      @include respond(tab-port){
+        border-radius: 2rem;
+        
       }
     }
+
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      gap: 4.5rem;
+      margin: auto;
+
+      width: 55%;
+    }
   }
+
+  @include respond(tab-port){
+    padding-bottom: 5rem;  }
 }

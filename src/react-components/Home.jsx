@@ -9,9 +9,9 @@ const Home = () => {
     <main style={{ backgroundColor: "#f2ff5b" }}>
       <section className="home">
         <div className="home__hero ">
-          
-            <div class="row " >
-              <div class="col-lg-5 main-1">
+          <div class="row ">
+            <div class="col-lg-5 main-1">
+              <div className="submain">
                 <h1 className="heading-primary">Design.</h1>
                 <h1 className="heading-primary">Develop.</h1>
                 <h1 className="heading-primary u-margin-bottom-small">
@@ -22,22 +22,24 @@ const Home = () => {
                   Asperiores alias fugiat assumenda quisquam. Explicabo, vitae?
                 </p>
               </div>
+            </div>
 
-              <div className="col-lg-5 main-2">
-                <img id="main" src={Medusa} alt="" />
-              </div>
+            <div className="col-lg-5 main-2">
+              <img id="main" src={Medusa} alt="" />
             </div>
           </div>
-       
+        </div>
       </section>
       <section className="about__section" id="about__section">
         <div className="about">
-          <h2 className="secondary-heading">About</h2>
-          <p className="about__text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-            ducimus a quo odio voluptatibus omnis dolore modi, fuga nostrum
-            nisi.
-          </p>
+          <div className="about__content">
+            <h2 className="secondary-heading">About</h2>
+            <p className="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              ducimus a quo odio voluptatibus omnis dolore modi, fuga nostrum
+              nisi.
+            </p>
+          </div>
         </div>
       </section>
       <section className="service__section__home">

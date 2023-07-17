@@ -6,7 +6,7 @@ const Header = () => {
     <nav class=" header  navbar navbar-expand-lg bg-black text-white ">
       <div class="container">
         <Link class=" header__brand  navbar-brand text-white" to={"/"}  target={true}>
-        <img src={logo} alt="Logo" style={{width:"5rem",marginLeft:"4rem"}} />
+        <img src={logo} alt="Logo" className="header__logo"  />
           
         </Link>
         <button

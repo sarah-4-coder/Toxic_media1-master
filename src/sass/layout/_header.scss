@@ -1,13 +1,16 @@
-
 .header {
   font-size: 1.4rem;
-  padding: .9rem 1.5rem .9rem;
+  padding: 0.9rem 1.5rem;
 
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100;
+  @include respond(tab-port) {
+    font-size: 3rem;
+    padding: 2rem 1.5rem;
+  }
 
   &__collapse {
     margin-left: 58%;
@@ -17,8 +20,11 @@
   &__link {
     width: 7rem;
     margin-right: 4rem;
-    
+
     transition: all 0.2s;
+    @include respond(tab-port) {
+      width: 15rem;
+    }
 
     &:hover {
       color: $color-primary !important;
@@ -29,5 +35,23 @@
   &__button {
     background-color: $color-white;
     margin-right: 2rem;
+    @include respond(tab-port) {
+      height: 3rem;
+      width: 4rem;
+      border-radius: 1rem;
+    }
+  }
+  &__logo {
+    width: 5rem;
+    @include respond(tab-port) {
+      width: 7rem;
+      height: 6rem;
+    }
+  }
+}
+
+.container {
+  @include respond(tab-port) {
+    max-width: 69.6rem;
   }
 }

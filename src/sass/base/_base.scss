@@ -12,7 +12,7 @@ html {
   background-color: $color-bg;
 
   @include respond(tab-port) {
-    font-size: 65%; // 1rem=8px;8/16=50%
+    font-size: 75%; // 1rem=8px;8/16=50%
   }
 
   @include respond(big-desktop) {
@@ -25,7 +25,6 @@ body {
 
   font-weight: 400;
   font-family: "Satoshi";
-  padding: 5.5rem 0 0rem;
 
   hyphens: auto;
 
