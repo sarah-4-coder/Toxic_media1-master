@@ -68,9 +68,9 @@
   height: 24rem;
   border-radius: 3rem;
   @include respond(tab-port) {
-    border-top-left-radius: 9rem;
-    border-top-right-radius: 9rem;
-    height: 90rem;
+    border-top-left-radius: 7rem;
+    border-top-right-radius: 7rem;
+    height: 85rem;
   }
 
   .about {
@@ -87,8 +87,8 @@
     @include respond(tab-port) {
       top: 55%;
       left: 50%;
-      height: 60%;
-      width: 75%;
+      height: 55%;
+      width: 70%;
     }
   }
 
