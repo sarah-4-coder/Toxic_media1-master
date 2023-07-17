@@ -6,6 +6,9 @@
 
   .secondary-heading {
     color: #000;
+    @include respond(tab-port) {
+      font-size: 6rem;
+    }
   }
   .work__button {
     width: 100%;
@@ -15,6 +18,9 @@
       background-color: #000;
       color: #fff;
       transition: all 0.4s;
+      @include respond(tab-port) {
+        font-size: 1.6rem;
+      }
 
       &:hover {
         color: #000;
@@ -25,17 +31,24 @@
     .active {
       background-color: #000;
       color: #f2ff5b;
+      @include respond(tab-port) {
+        font-size: 2rem;
+      }
     }
   }
 
   .work__content {
     .container {
+      @include respond(tab-port){
+        box-shadow: 0px 15px 10px -15px #111;
+        padding-bottom: 2rem;
+      }
       .row {
         width: 85%;
-        margin: 0 auto;
+        margin: auto;
 
         @include respond(tab-port) {
-          width: 100%;
+          width: 95%;
         }
       }
     }
@@ -55,6 +68,10 @@
       color: #f2ff5b;
       transition: all 0.4s;
       padding: 1.5rem 3rem;
+      @include respond(tab-port) {
+        font-size: 1.7rem;
+        margin-left: -2rem;
+      }
 
       &:hover {
         transform: scale(1.1);
@@ -65,5 +82,12 @@
   }
   &__text {
     color: #000;
+    @include respond(tab-port) {
+      font-size: 2.5rem;
+      width: 105%;
+      
+      margin-left: -2rem;
+    }
   }
 }
+

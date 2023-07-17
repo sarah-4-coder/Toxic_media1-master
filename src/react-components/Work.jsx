@@ -63,94 +63,92 @@ const Work = () => {
 
   return (
     <section className="work__section  u-margin-top-small">
-      
-        <h2 className="secondary-heading u-margin-bottom-big">Our Work</h2>
-        <div className="work__button">
-          <a
-            href="#e"
-            className={
-              selectedButton === 1 ||
-              (selectedButton !== 1 &&
-                selectedButton !== 2 &&
-                selectedButton !== 3)
-                ? "active button"
-                : "button"
-            }
-            onClick={() => {
-              handleclick(1);
-            }}
-          >
-            Digital Marketing
-          </a>
-          <a
-            href="#e"
-            className={selectedButton === 2 ? "active button" : "button"}
-            onClick={() => handleclick(2)}
-          >
-            development
-          </a>
-          <a
-            href="#e"
-            className={selectedButton === 3 ? "active button" : "button"}
-            onClick={() => handleclick(3)}
-          >
-            3D Modelling
-          </a>
-        </div>
-        <div className="work__contentbox">
-          {selectedButton !== 1 &&
-            selectedButton !== 2 &&
-            selectedButton !== 3 && (
-              <div className="work__content">
-                <Content
-                  text={Work_detail[0].work_text_1}
-                  src={Work_detail[0].work_imgsrc_1}
-                />
-                <Content
-                  text={Work_detail[0].work_text_1}
-                  src={Work_detail[0].work_imgsrc_1}
-                />
-              </div>
-            )}
+      <h2 className="secondary-heading u-margin-bottom-big">Our Work</h2>
+      <div className="work__button">
+        <a
+          href="#e"
+          className={
+            selectedButton === 1 ||
+            (selectedButton !== 1 &&
+              selectedButton !== 2 &&
+              selectedButton !== 3)
+              ? "active button"
+              : "button"
+          }
+          onClick={() => {
+            handleclick(1);
+          }}
+        >
+          Digital Marketing
+        </a>
+        <a
+          href="#e"
+          className={selectedButton === 2 ? "active button" : "button"}
+          onClick={() => handleclick(2)}
+        >
+          development
+        </a>
+        <a
+          href="#e"
+          className={selectedButton === 3 ? "active button" : "button"}
+          onClick={() => handleclick(3)}
+        >
+          3D Modelling
+        </a>
+      </div>
+      <div className="work__contentbox">
+        {selectedButton !== 1 &&
+          selectedButton !== 2 &&
+          selectedButton !== 3 && (
+            <div className="work__content">
+              <Content
+                text={Work_detail[0].work_text_1}
+                src={Work_detail[0].work_imgsrc_1}
+              />
+              <Content
+                text={Work_detail[0].work_text_1}
+                src={Work_detail[0].work_imgsrc_1}
+              />
+            </div>
+          )}
 
-          {selectedButton === 1 ? (
-            <div className="work__content">
-              <Content
-                text={Work_detail[0].work_text_1}
-                src={Work_detail[0].work_imgsrc_1}
-              />
-              <Content
-                text={Work_detail[0].work_text_1}
-                src={Work_detail[0].work_imgsrc_1}
-              />
-            </div>
-          ) : null}
-          {selectedButton === 2 ? (
-            <div className="work__content">
-              <Content
-                text={Work_detail[1].work_text_2}
-                src={Work_detail[1].work_imgsrc_2}
-              />
-              <Content
-                text={Work_detail[1].work_text_2}
-                src={Work_detail[1].work_imgsrc_2}
-              />
-            </div>
-          ) : null}
-          {selectedButton === 3 ? (
-            <div clasName="work__content">
-              <Content
-                text={Work_detail[2].work_text_3}
-                src={Work_detail[2].work_imgsrc_3}
-              />
-              <Content
-                text={Work_detail[2].work_text_3}
-                src={Work_detail[2].work_imgsrc_3}
-              />
-            </div>
-          ) : null}
-        </div>
-      
+        {selectedButton === 1 ? (
+          <div className="work__content">
+            <Content
+              text={Work_detail[0].work_text_1}
+              src={Work_detail[0].work_imgsrc_1}
+            />
+            <Content
+              text={Work_detail[0].work_text_1}
+              src={Work_detail[0].work_imgsrc_1}
+            />
+          </div>
+        ) : null}
+        {selectedButton === 2 ? (
+          <div className="work__content">
+            <Content
+              text={Work_detail[1].work_text_2}
+              src={Work_detail[1].work_imgsrc_2}
+            />
+            <Content
+              text={Work_detail[1].work_text_2}
+              src={Work_detail[1].work_imgsrc_2}
+            />
+          </div>
+        ) : null}
+        {selectedButton === 3 ? (
+          <div clasName="work__content">
+            <Content
+              text={Work_detail[2].work_text_3}
+              src={Work_detail[2].work_imgsrc_3}
+            />
+            <Content
+              text={Work_detail[2].work_text_3}
+              src={Work_detail[2].work_imgsrc_3}
+            />
+          </div>
+        ) : null}
+      </div>
     </section>
   );
 };
