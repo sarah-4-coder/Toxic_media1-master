@@ -76,9 +76,10 @@
 }
 
 .row {
-  width: 90%;
+  width: 85%;
   margin:auto;
   @include respond(tab-port) {
+    width: 90%;
     flex-direction: column;
     gap: 5rem;
   }
