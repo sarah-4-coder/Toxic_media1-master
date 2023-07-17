@@ -1,10 +1,8 @@
-
 .footer {
   position: static;
   bottom: 0;
   left: 0;
-  
-  
+
   background-color: $color-bg;
   color: $color-white;
   height: auto;
@@ -22,6 +20,7 @@
     @include respond(tab-port) {
       display: block;
       margin-bottom: 2rem;
+      margin-left: -5rem;
     }
     .footer__img {
       width: 6.5rem;
@@ -47,11 +46,15 @@
     margin: 0 2rem 0.7rem;
     @include respond(tab-port) {
       width: 0;
+      visibility: hidden;
     }
   }
 
   &__icons {
     display: inline-block;
+    @include respond(tab-port) {
+      margin-left: -5rem;
+    }
   }
 
   &__facebook,
@@ -88,6 +91,9 @@
 
   &__lpart {
     padding-left: 8rem;
+    @include respond(tab-port) {
+      padding-left: 3rem;
+    }
   }
 
   &__card {
@@ -99,6 +105,10 @@
     &--2,
     &--3 {
       flex-basis: 25rem;
+    }
+
+    @include respond(tab-port) {
+      gap: 0;
     }
   }
 
@@ -124,7 +134,7 @@
     transition: all 0.2s;
 
     @include respond(tab-port) {
-      font-size: 2rem;
+      font-size: 2.5rem;
     }
 
     &:hover {
@@ -136,10 +146,28 @@
     display: inline-block;
 
     transition: all 0.2s;
+
+
+
     &:hover {
       transform: skewY(2deg) skewX(13deg) scale(1.2);
       text-shadow: 0.5rem 1rem 2rem rgba(#fff, 0.5);
       color: $color-primary;
     }
+
+    .copyright__text{
+      @include respond(tab-port){
+        font-size: 2.5rem;
+      }
+    }
+
+    @include respond(tab-port) {
+      &:hover {
+        transform: none;
+      }
+    }
+  }
+  @include respond(tab-port){
+    padding-top: 12rem;
   }
 }
