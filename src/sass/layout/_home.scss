@@ -5,8 +5,8 @@
   background-color: $color-primary;
 
   &__hero {
-    height: 65vh;
-    padding: 10rem 4rem 0rem;
+    height: 74vh;
+    padding: 15rem 4rem 0rem;
 
     @include respond(tab-port) {
       height: 96vh;
@@ -17,6 +17,7 @@
     .row {
       display: flex;
       margin: auto;
+      
     }
 
     .main-1 {
@@ -82,7 +83,7 @@
     transform: translate(-50%, -50%);
     height: 100%;
     padding: 8rem;
-    width: 30%;
+    width: 28%;
 
     @include respond(tab-port) {
       top: 55%;
@@ -124,7 +125,7 @@
 
   .service__home {
     text-align: center;
-    width: 65%;
+    width: 60%;
     margin: auto;
     .secondary-heading {
       color: $color-primary;
@@ -143,7 +144,7 @@
     padding: 5rem 6rem;
 
     .accordion-button {
-      width: 97.6%;
+      width: 95.6%;
       @include respond(tab-port) {
         width: 110%;
       }
@@ -184,7 +185,7 @@
     &-button {
       background-color: $color-bg;
       color: $color-white;
-      font-size: 1.7rem;
+      font-size: 2.2rem;
       font-weight: 500;
 
       &:hover,
@@ -247,9 +248,10 @@
 }
 
 .testimonial__section {
-  margin-top: -2rem;
   background-color: $color-bg;
   text-align: center;
+  margin-top: -1rem;
+  padding-top: 3rem;
   padding-bottom: 5rem;
   .disable-scrollbars {
     scrollbar-width: none; /* Firefox */
@@ -317,9 +319,9 @@
           font-size: 2rem;
         }
       }
-      @include respond(tab-port){
+      @include respond(tab-port) {
         border-radius: 2rem;
-        
+        padding: 4rem 2.4rem;
       }
     }
 
@@ -329,10 +331,11 @@
       gap: 4.5rem;
       margin: auto;
 
-      width: 55%;
+      width: 65%;
     }
   }
 
-  @include respond(tab-port){
-    padding-bottom: 5rem;  }
+  @include respond(tab-port) {
+    padding-bottom: 5rem;
+  }
 }

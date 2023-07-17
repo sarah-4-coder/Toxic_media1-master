@@ -27,14 +27,14 @@
       height: 5rem;
       margin-right: 0.5rem;
       @include respond(tab-port) {
-        width: 9rem;
-        height: 8rem;
+        width: 14rem;
+        height: 11rem;
       }
     }
     .secondary-heading {
       font-size: 2.5rem;
       @include respond(tab-port) {
-        font-size: 3.5rem;
+        font-size: 5.5rem;
       }
     }
   }
